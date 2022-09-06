@@ -4,7 +4,7 @@ import 'https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
 contract Token is ERC20 { //create and define the contract/token, in this case a ERC20
     address public admin; // this means I'm using a public address
-    constructor () ERC20('<Token_Name>', <Token_Abbrevation> { // put here the name you want for your token
+    constructor () ERC20('<Token_Name>', '<Token_Abbrevation>' { // put here the name you want for your token
         _mint(msg.semder, 10000 * 10 *18); // mint process
      admin = msg.semder; // define the admin
      }
