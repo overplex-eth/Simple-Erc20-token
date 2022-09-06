@@ -13,8 +13,10 @@ contract Token is ERC20 { //create and define the contract/token, in this case a
           require(msg.sender == admin, 'only admin'); // put that only the admin can mint
           _mint(to, amount); // setup how much and where the token need to be minted
      
-     function burn(uint amount) external { // setup a burn function, for destry the token
+     function burn(uint amount) external { // setup a burn function, for destroy the token
           _burn(msg,sender, amount);
      }
      
 }
+
+// you can basically put every function you want from the openzeppelin page i will put some examples tomorrow
