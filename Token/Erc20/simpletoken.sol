@@ -9,6 +9,11 @@ contract Token is ERC20 { //create and define the contract/token, in this case a
      admin = msg.semder; // define the admin
      }
      
+     function name() public view virtual override returns (string memory) {
+        return _name;
+    }
+
+     
      function mint(address to, uint amount) external { // setting up function
           require(msg.sender == admin, 'only admin'); // put that only the admin can mint
           _mint(to, amount); // setup how much and where the token need to be minted
